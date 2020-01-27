@@ -31,3 +31,5 @@ $reflection = new \ReflectionClass($bitrixExceptionHandler);
 $property = $reflection->getProperty('handlerLog');
 $property->setAccessible(true);
 $property->setValue($bitrixExceptionHandler, $handler);
+
+require('TestCaseBitrix.php');

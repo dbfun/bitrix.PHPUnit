@@ -1,13 +1,8 @@
 <?php
-use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\TestCaseBitrix;
 
-final class SimpleTest extends TestCase
+final class SimpleTest extends TestCaseBitrix
 {
-
-  // Черный список глобальных переменных, которые восстанавливаются после каждого теста
-  // @see https://phpunit.readthedocs.io/ru/latest/fixtures.html
-
-  protected $backupGlobalsBlacklist = ['DB'];
 
   // Тест подключения модуля
   public function testCmodule()
