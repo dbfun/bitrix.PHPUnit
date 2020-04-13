@@ -33,3 +33,4 @@ $property->setAccessible(true);
 $property->setValue($bitrixExceptionHandler, $handler);
 
 require('TestCaseBitrix.php');
+while (ob_get_level()) ob_end_clean();
